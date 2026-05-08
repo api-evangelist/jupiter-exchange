@@ -1,0 +1,29 @@
+aid: jupiter-exchange
+url: https://raw.githubusercontent.com/api-evangelist/jupiter-exchange/refs/heads/main/apis.yml
+name: Jupiter
+x-type: company
+description: >-
+  Jupiter is the leading Solana DEX aggregator and trading platform. APIs cover Quote, Swap, Limit Orders, DCA, Perps, and Token Lists.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Web3
+  - Solana
+  - DEX
+  - Aggregator
+  - Swap
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://jup.ag/
+  - type: Plans
+    url: plans/jupiter-exchange-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/jupiter-exchange-rate-limits.yml
+  - type: FinOps
+    url: finops/jupiter-exchange-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
