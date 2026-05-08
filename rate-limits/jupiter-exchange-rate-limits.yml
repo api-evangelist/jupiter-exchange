@@ -7,29 +7,31 @@ created: '2026-05-08'
 modified: '2026-05-08'
 reconciled: false
 tags:
-- Web3
-- Solana
-- DEX
-- Aggregator
-- Swap
-- Rate Limiting
-- Quotas
-- Throttling
-description: Placeholder rate-limit artifact for Jupiter. Replace with real limits once researched.
-notes: Initial scaffold — limits have not yet been reconciled.
+  - Solana
+  - DEX
+  - Rate Limiting
+description: >-
+  Jupiter Lite tier (lite-api.jup.ag) is fair-use, commonly throttled at around 10 requests per
+  second per IP. Pro tier (pro-api.jup.ag) keys raise per-second limits per subscription. 429
+  is returned when limits are exceeded.
+notes: Jupiter does not publish a public per-tier rate-limit table; figures are best-effort.
 sources:
-- https://jup.ag/
+  - https://developers.jup.ag/docs
 responseCodes:
   throttled: 429
 limits:
-- name: Default
-  scope: account
-  metric: varies
-  limit: see provider documentation
-  notes: Pending reconciliation.
+  - name: Lite (fair use)
+    scope: ip
+    metric: requests_per_second
+    limit: 10
+  - name: Pro (typical)
+    scope: api_key
+    metric: requests_per_second
+    limit: 100
+    notes: Per-subscription tier.
 policies:
-- name: Backoff Strategy
-  description: Clients should implement exponential backoff with jitter and honor any Retry-After header.
+  - name: Backoff Strategy
+    description: Honor 429 Retry-After and apply exponential backoff with jitter.
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+  - FN: Kin Lane
+    email: kin@apievangelist.com

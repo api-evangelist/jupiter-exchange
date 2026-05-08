@@ -7,35 +7,54 @@ created: '2026-05-08'
 modified: '2026-05-08'
 reconciled: false
 tags:
-- Web3
-- Solana
-- DEX
-- Aggregator
-- Swap
-- Plans
-description: Placeholder plans/pricing artifact for Jupiter. Replace with real published pricing once
-  the pipeline researches the provider's plans page.
-notes: Initial scaffold — plans/pricing have not yet been reconciled.
+  - Solana
+  - DEX
+  - Plans
+description: >-
+  Jupiter Developer Platform offers a free Lite tier (lite-api.jup.ag, basic limits) and paid
+  Pro tiers (pro-api.jup.ag) with higher rate limits and SLAs. Pro pricing is published as a
+  monthly subscription on the Developer Platform; rates were not accessible during this run.
+notes: Jupiter pro tier pricing not accessible during research.
 sources:
-- https://jup.ag/
+  - https://developers.jup.ag/docs
+  - https://portal.jup.ag/pricing
 plans:
-- id: jupiter-exchange-default
-  name: To Be Reconciled
-  type: enterprise
-  description: Initial scaffold; replace with provider plan tiers once pricing is reconciled.
-  entries:
-  - label: API Access
-    name: api_access
-    type: flat
-    metric: varies
-    limit: -1
-    timeFrame: usage
-    geo: global
-    unit: 1
-    price: see https://jup.ag/
-    userMultiplied: false
-  elements:
-  - name: Pending Reconciliation
+  - id: jupiter-lite
+    name: Lite (Free)
+    type: freemium
+    description: Free Lite endpoints under lite-api.jup.ag with fair-use limits.
+    entries:
+      - label: Monthly subscription
+        name: lite_monthly
+        type: subscription
+        metric: month
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: '0.00'
+        userMultiplied: false
+    elements:
+      - name: Lite endpoints
+      - name: Fair-use rate limit
+  - id: jupiter-pro
+    name: Pro
+    type: subscription
+    description: Subscription tier with higher rate limits and SLA.
+    entries:
+      - label: Custom pricing
+        name: pro_custom
+        type: subscription
+        metric: month
+        limit: -1
+        timeFrame: month
+        geo: global
+        unit: 1
+        price: contact sales
+        userMultiplied: false
+    elements:
+      - name: pro-api.jup.ag endpoints
+      - name: Higher rate limits
 maintainers:
-- FN: Kin Lane
-  email: kin@apievangelist.com
+  - FN: Kin Lane
+    email: kin@apievangelist.com
