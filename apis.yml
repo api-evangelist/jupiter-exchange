@@ -1,7 +1,7 @@
 aid: jupiter-exchange
 url: https://raw.githubusercontent.com/api-evangelist/jupiter-exchange/refs/heads/main/apis.yml
 name: Jupiter
-x-type: company
+kind: company
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
   - Web3
