@@ -2,7 +2,7 @@ aid: jupiter-exchange
 url: https://raw.githubusercontent.com/api-evangelist/jupiter-exchange/refs/heads/main/apis.yml
 name: Jupiter
 kind: company
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Web3
   - Solana
@@ -27,7 +27,7 @@ apis:
       - Swap
       - Aggregator
       - Solana
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://lite-api.jup.ag/swap/v1
     humanURL: https://developers.jup.ag/docs/swap-api
     description: Quote and swap endpoints aggregating Solana DEX liquidity.
@@ -47,7 +47,7 @@ apis:
       - Prices
       - Solana
       - Tokens
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://lite-api.jup.ag/price/v3
     humanURL: https://developers.jup.ag/docs/price-api
     description: USD pricing for Solana tokens, with batch lookup and best-route prices.
@@ -66,7 +66,7 @@ apis:
       - Tokens
       - Metadata
       - Solana
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://tokens.jup.ag
     humanURL: https://developers.jup.ag/docs/tokens-api
     description: Verified Solana token list and metadata.
@@ -83,7 +83,7 @@ apis:
     tags:
       - Limit Orders
       - Solana
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://lite-api.jup.ag/trigger/v1
     humanURL: https://developers.jup.ag/docs/trigger-api
     description: Limit order placement, query, and cancellation on Solana.
@@ -100,7 +100,7 @@ apis:
       - DCA
       - Recurring
       - Solana
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://lite-api.jup.ag/recurring/v1
     humanURL: https://developers.jup.ag/docs/recurring-api
     description: Recurring (dollar-cost-averaging) order automation on Solana.
@@ -116,7 +116,7 @@ apis:
     tags:
       - Perpetuals
       - Solana
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://perps-api.jup.ag
     humanURL: https://developers.jup.ag/docs/perps-api
     description: Leveraged perp trading endpoints on Jupiter Perps.
