@@ -130,6 +130,10 @@ apis:
       - Perp trading UIs
       - Bot strategies
 common:
+  - type: DomainSecurity
+    url: security/jupiter-exchange-domain-security.yml
+  - type: Authentication
+    url: authentication/jupiter-exchange-authentication.yml
   - type: Portal
     url: https://jup.ag/
   - type: Documentation
@@ -144,6 +148,8 @@ common:
     url: rate-limits/jupiter-exchange-rate-limits.yml
   - type: FinOps
     url: finops/jupiter-exchange-finops.yml
+  - url: https://developers.jup.ag/blog
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
