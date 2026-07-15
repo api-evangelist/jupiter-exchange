@@ -130,6 +130,8 @@ apis:
       - Perp trading UIs
       - Bot strategies
 common:
+  - type: AgenticAccess
+    url: agentic-access/jupiter-exchange-agentic-access.yml
   - type: DomainSecurity
     url: security/jupiter-exchange-domain-security.yml
   - type: Authentication
