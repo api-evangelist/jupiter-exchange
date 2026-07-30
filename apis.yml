@@ -2,7 +2,20 @@ aid: jupiter-exchange
 url: https://raw.githubusercontent.com/api-evangelist/jupiter-exchange/refs/heads/main/apis.yml
 name: Jupiter
 kind: company
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/jupiter-exchange.png
 tags:
   - Web3
   - Solana
@@ -21,114 +34,124 @@ description: >-
   and borrowing), Trigger (limit orders), Recurring (DCA), Prediction (event markets), and Perps
   (leveraged trading). The Developer Platform issues a single API key across products.
 apis:
-  - aid: jupiter-exchange:swap-api
-    name: Jupiter Swap API
-    tags:
-      - Swap
-      - Aggregator
-      - Solana
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://lite-api.jup.ag/swap/v1
-    humanURL: https://developers.jup.ag/docs/swap-api
-    description: Quote and swap endpoints aggregating Solana DEX liquidity.
-    properties:
-      - type: Documentation
-        url: https://developers.jup.ag/docs/swap-api
-    x-features:
-      - Aggregates 30+ Solana DEXes
-      - Quote endpoint with route metadata
-      - Swap-instruction builder
-    x-use-cases:
-      - Solana wallet swap UI
-      - Trading bots
-  - aid: jupiter-exchange:price-api
-    name: Jupiter Price API
-    tags:
-      - Prices
-      - Solana
-      - Tokens
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://lite-api.jup.ag/price/v3
-    humanURL: https://developers.jup.ag/docs/price-api
-    description: USD pricing for Solana tokens, with batch lookup and best-route prices.
-    properties:
-      - type: Documentation
-        url: https://developers.jup.ag/docs/price-api
-    x-features:
-      - Batched USD prices
-      - Mint-address lookup
-    x-use-cases:
-      - Wallet portfolio display
-      - Pricing widgets
-  - aid: jupiter-exchange:tokens-api
-    name: Jupiter Tokens API
-    tags:
-      - Tokens
-      - Metadata
-      - Solana
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://tokens.jup.ag
-    humanURL: https://developers.jup.ag/docs/tokens-api
-    description: Verified Solana token list and metadata.
-    properties:
-      - type: Documentation
-        url: https://developers.jup.ag/docs/tokens-api
-    x-features:
-      - Verified token list
-      - Metadata (symbol, decimals, logo)
-    x-use-cases:
-      - Token pickers in wallets
-  - aid: jupiter-exchange:trigger-api
-    name: Jupiter Trigger (Limit Order) API
-    tags:
-      - Limit Orders
-      - Solana
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://lite-api.jup.ag/trigger/v1
-    humanURL: https://developers.jup.ag/docs/trigger-api
-    description: Limit order placement, query, and cancellation on Solana.
-    properties:
-      - type: Documentation
-        url: https://developers.jup.ag/docs/trigger-api
-    x-features:
-      - Place / query / cancel limit orders
-    x-use-cases:
-      - Limit order DEX UI
-  - aid: jupiter-exchange:recurring-api
-    name: Jupiter Recurring (DCA) API
-    tags:
-      - DCA
-      - Recurring
-      - Solana
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://lite-api.jup.ag/recurring/v1
-    humanURL: https://developers.jup.ag/docs/recurring-api
-    description: Recurring (dollar-cost-averaging) order automation on Solana.
-    properties:
-      - type: Documentation
-        url: https://developers.jup.ag/docs/recurring-api
-    x-features:
-      - Schedule recurring buys/sells
-    x-use-cases:
-      - DCA savings products
-  - aid: jupiter-exchange:perps-api
-    name: Jupiter Perps API
-    tags:
-      - Perpetuals
-      - Solana
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://perps-api.jup.ag
-    humanURL: https://developers.jup.ag/docs/perps-api
-    description: Leveraged perp trading endpoints on Jupiter Perps.
-    properties:
-      - type: Documentation
-        url: https://developers.jup.ag/docs/perps-api
-    x-features:
-      - Perp positions and orders
-      - Funding and liquidations data
-    x-use-cases:
-      - Perp trading UIs
-      - Bot strategies
+- aid: jupiter-exchange:swap-api
+  name: Jupiter Swap API
+  tags:
+  - Swap
+  - Aggregator
+  - Solana
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  baseURL: https://lite-api.jup.ag/swap/v1
+  humanURL: https://developers.jup.ag/docs/swap-api
+  description: Quote and swap endpoints aggregating Solana DEX liquidity.
+  properties:
+  - type: Documentation
+    url: https://developers.jup.ag/docs/swap-api
+  x-features:
+  - Aggregates 30+ Solana DEXes
+  - Quote endpoint with route metadata
+  - Swap-instruction builder
+  x-use-cases:
+  - Solana wallet swap UI
+  - Trading bots
+- aid: jupiter-exchange:price-api
+  name: Jupiter Price API
+  tags:
+  - Prices
+  - Solana
+  - Tokens
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  baseURL: https://lite-api.jup.ag/price/v3
+  humanURL: https://developers.jup.ag/docs/price-api
+  description: USD pricing for Solana tokens, with batch lookup and best-route prices.
+  properties:
+  - type: Documentation
+    url: https://developers.jup.ag/docs/price-api
+  x-features:
+  - Batched USD prices
+  - Mint-address lookup
+  x-use-cases:
+  - Wallet portfolio display
+  - Pricing widgets
+- aid: jupiter-exchange:tokens-api
+  name: Jupiter Tokens API
+  tags:
+  - Tokens
+  - Metadata
+  - Solana
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  baseURL: https://tokens.jup.ag
+  humanURL: https://developers.jup.ag/docs/tokens-api
+  description: Verified Solana token list and metadata.
+  properties:
+  - type: Documentation
+    url: https://developers.jup.ag/docs/tokens-api
+  x-features:
+  - Verified token list
+  - Metadata (symbol, decimals, logo)
+  x-use-cases:
+  - Token pickers in wallets
+- aid: jupiter-exchange:trigger-api
+  name: Jupiter Trigger (Limit Order) API
+  tags:
+  - Limit Orders
+  - Solana
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  baseURL: https://lite-api.jup.ag/trigger/v1
+  humanURL: https://developers.jup.ag/docs/trigger-api
+  description: Limit order placement, query, and cancellation on Solana.
+  properties:
+  - type: Documentation
+    url: https://developers.jup.ag/docs/trigger-api
+  x-features:
+  - Place / query / cancel limit orders
+  x-use-cases:
+  - Limit order DEX UI
+- aid: jupiter-exchange:recurring-api
+  name: Jupiter Recurring (DCA) API
+  tags:
+  - DCA
+  - Recurring
+  - Solana
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  baseURL: https://lite-api.jup.ag/recurring/v1
+  humanURL: https://developers.jup.ag/docs/recurring-api
+  description: Recurring (dollar-cost-averaging) order automation on Solana.
+  properties:
+  - type: Documentation
+    url: https://developers.jup.ag/docs/recurring-api
+  x-features:
+  - Schedule recurring buys/sells
+  x-use-cases:
+  - DCA savings products
+- aid: jupiter-exchange:perps-api
+  name: Jupiter Perps API
+  tags:
+  - Perpetuals
+  - Solana
+  image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+  baseURL: https://perps-api.jup.ag
+  humanURL: https://developers.jup.ag/docs/perps-api
+  description: Leveraged perp trading endpoints on Jupiter Perps.
+  properties:
+  - type: Documentation
+    url: https://developers.jup.ag/docs/perps-api
+  x-features:
+  - Perp positions and orders
+  - Funding and liquidations data
+  x-use-cases:
+  - Perp trading UIs
+  - Bot strategies
+- aid: jupiter-exchange:jupiter-exchange-swap-api
+  name: Jupiter Swap API
+  description: Quote and build Solana DEX-aggregator swap transactions.
+  humanURL: https://developers.jup.ag/docs/swap-api
+  baseURL: https://lite-api.jup.ag/swap/v1
+  tags:
+  - Swap
+  properties:
+  - type: OpenAPI
+    url: openapi/jupiter-exchange-swap-api-openapi.yml
 common:
   - type: AgenticAccess
     url: agentic-access/jupiter-exchange-agentic-access.yml
