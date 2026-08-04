@@ -1,0 +1,14 @@
+{
+  "provider": "jupiter-exchange",
+  "sources": [
+    "jupiter-exchange-swap-api-openapi.yml"
+  ],
+  "outputs": [
+    "jupiter-exchange-swap-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
