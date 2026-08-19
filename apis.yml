@@ -27,7 +27,7 @@ tags:
   - Perpetuals
 created: '2026-05-08'
 modified: '2026-05-08'
-specificationVersion: '0.19'
+specificationVersion: '0.23'
 description: >-
   Jupiter is the leading Solana DEX aggregator and liquidity infrastructure platform. APIs cover
   Swap (token exchanges), Tokens (metadata and verification), Price (USD pricing), Lend (yield
