@@ -166,6 +166,8 @@ apis:
   - type: OpenAPI
     url: openapi/jupiter-exchange-swap-api-openapi.yml
 common:
+  - type: Website
+    url: https://www.jup.ag/
   - type: AgenticAccess
     url: agentic-access/jupiter-exchange-agentic-access.yml
   - type: DomainSecurity
